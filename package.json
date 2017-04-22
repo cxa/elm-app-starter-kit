@@ -1,0 +1,22 @@
+{
+  "name": "elm-app-starter-kit",
+  "version": "0.0.1",
+  "license": "WTFPL",
+  "scripts": {
+    "dev": "gulp& webpack-dev-server --colors --hot --inline --port 3000",
+    "dist": "gulp build && NODE_ENV=production webpack -p"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "elm-hot-loader": "^0.5.4",
+    "elm-webpack-loader": "^4.3.0",
+    "elmx": "^2.0.0",
+    "file-loader": "^0.11.1",
+    "gulp": "^3.9.1",
+    "gulp-insert": "^0.5.0",
+    "gulp-rename": "^1.2.2",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4"
+  }
+}

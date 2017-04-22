@@ -1,0 +1,14 @@
+module Counter.View exposing (..)
+
+import Html exposing (..)
+import Html.Attributes exposing (..)
+import Html.Events
+import Counter.State exposing (..)
+
+view : Model -> Html Msg
+view model =
+  <div style="padding: 40px;">
+    <button onClick={Decrement}>Minus</button>
+    <span>{=(toString model)}</span>
+    <button onClick={Increment}>Plus</button>
+  </div>
